@@ -37,8 +37,17 @@
 			<div class = "about-wrapper">
 				<div class= "about-me" >
 
-					<h6 style= "margin: 0;">Project Description</h6>
-					<p>Currently completed my junior year pursuing an integrated masters program at Robert Morris University. Working towards a bachelors degree in Software Engineering and a masters in Engineering Management. Focused on looking for a software engineering internship where I can gain practical experience and learn from experienced professionals in the field. </p>
+					<h5 style= "margin: 0;">Project Description</h5>
+					<h6>A python script that used boto3 library to take private ip addresses from aws and update the company ip addresses document </h6>
+					<ul>
+					<li><p>When running the script, the user provided a JSON input file, a csv output file, and AWS credential profile as arguments</p></li>
+					<li><p>The JSON input file included the company employees, ips used by each employee, and other information about employees</p></li>
+					<li><p>The script performs error checking on all these arguments (including whether the file exists and whether it is empty or not)</p></li>
+					<li><p>After performing checks, the script uses the boto3 python library and the AWS credentials provided to access the users AWS account and get the active private ip addresses used by the company</p></li>
+					<li><p>These ip addreses included EC2 instances, RDS Endpoints, and Redshift Endpoints.</p></li>
+					<li><p>The script then parses through the JSON file you gave it and takes all the ips out, then it compares them to the active ips from AWS</p></li>
+					</ul>
+					
 
 					<h4>Skills Used: </h4>
 					<div id="skills">
